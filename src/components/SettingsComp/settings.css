@@ -1,0 +1,140 @@
+
+.row > div {
+    padding: 1rem;
+    background-color: #999999;
+    border: 2px solid #fff;
+    color: #fff;
+    
+  }
+  .root {
+    display: flex;
+    flex-grow: 1;
+    padding:20;
+    color:"darkgreen";
+    text-align: center;
+    align-items: center;
+  }
+  .form{
+    display:"flex";
+    flex-direction:"column";
+  /* //   alignItems:"flex-start";
+  //   width:'100%' */
+}
+
+.textInput {
+  width: 100%;
+}
+.textStyle {
+  font-size:1rem;
+  font-weight: 400;
+  text-align: left;
+  color:darkgreen;
+  text-align: center;
+}
+.leftTextStyle {
+  flex-grow: 0.7;
+  font-size:1rem;
+  font-weight: 400;
+  text-align: left;
+  color: darkgreen;
+  padding: 10px;
+  width: 11rem;
+}
+.rightcontainer {
+    font-size:1rem;
+    font-weight: 400;
+    text-align: right;
+    color: darkgreen;
+    padding: 10px;
+    width: 6rem;
+}
+.title {
+  font-size:1rem;
+  text-align: "center";
+  align-items: center;
+  line-height: 3em;
+  font-weight: 500;
+  border-radius: 10px;
+  text-align: center;
+  color:#fff;
+  height:3rem;
+  background-color: rgba(52, 116, 76, 0.7);
+}
+.formPaper  {
+  padding: 2%;
+  margin:1em;
+}
+.switch {
+  display:flex;
+  justify-content:space-between;
+  padding:10px 0 0 0;
+  align-items: baseline;
+  border-left:4px solid rgba(52, 116, 76, 0.7);
+  border-bottom: 1px solid rgba(52, 116, 76, 0.7);
+  border-radius: 5px;
+  margin: 10px 0 10px 0;
+  height: 4rem;
+}
+.imageDiv {
+  display:"flex";
+  flex-direction: row;
+  justify-content:flex-start;
+}
+.reaminMsgDiv {
+  position: "absolute";
+  bottom: 30px;
+  left: 20px;
+  width: 10rem;
+  height: 10rem;
+  background-color: lightcoral;
+}
+.formItem {
+    display:flex;
+    justify-content:space-between;
+    padding:0px 0 0 10px;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    border-left:4px solid rgba(52, 116, 76, 0.7);
+    border-bottom: 1px solid rgba(52, 116, 76, 0.7);
+    border-radius: 5px;
+    margin: 0 0 10px 0;
+    height: 4.28rem;
+  
+}
+.forminput{
+  margin:10px;
+  display: flex;
+  flex-grow: 1;
+}
+.formtextStyle {
+  font-size:1rem;
+  font-weight: 300;
+  width: 15rem;
+  text-align: left;
+  color: rgba(41, 95, 62);
+}
+
+.imageBtn {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  background-color:rgba(238, 209, 209, 0.3);
+  border: 1px dashed #999;
+  align-items: center;
+  justify-content: center;
+  margin:0 10px 10px 10px;
+}
+.imgContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.msg
+{
+  width: 10rem;
+  height: 10rem;
+  background-color:rgba(168, 163, 163, 0.3);
+  border: 1px dashed #999;
+  align-items: center;
+  justify-content: center;
+}
