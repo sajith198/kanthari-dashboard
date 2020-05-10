@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #F9FBFD;
 }
 
 .App-logo {
@@ -13,8 +14,45 @@
   }
 }
 
+.bg-card {
+  /* background: linear-gradient(to top right, #ff0000 30%, #000000 67%); */
+  background-color: #fff;
+}
+
+#todayBox {
+  /* background: linear-gradient(to top right, #33cc33 30%, #99ffcc 76%); */
+  background-color: #fff;
+  color: #0099ff;
+}
+
+#processingBox {
+  /* background: linear-gradient(to top right, #ff6600 30%, #ffff66 76%); */
+  background-color: #fff;
+  color: #0099ff;
+}
+#completedBox {
+  /* background: linear-gradient(to top right, #0099ff 30%, #000066 76%); */
+  background-color: #fff;
+  color: #0099ff;
+}
+#cancelledBox {
+  /* background: linear-gradient(to top right, #ff6666 30%, #ff0000 76%); */
+  background-color: #fff;
+  color: #0099ff;
+}
+#mainBox {
+  /* background: linear-gradient(to top right, #ffffff 32%, #ffffcc 77%); */
+  color: #0099ff;
+}
+
+.mainBody {
+  position: relative;
+  top: 40px;
+  margin-left: 8px;
+}
+
 .App-header {
-  background-color: #282c34;
+  background-color: #7a0111;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
