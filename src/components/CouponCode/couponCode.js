@@ -33,9 +33,8 @@ class CouponCode extends Component {
     return (
       <React.Fragment>
         <div className="mb-5">
-          <AllNavBar></AllNavBar>
-        </div>
-        <div className="container mainBody table-responsive">
+          <AllNavBar>
+          <div className="container mainBody table-responsive">
           <MaterialTable
             title="Coupons"
             columns={tableColumnsHeaders}
@@ -85,6 +84,9 @@ class CouponCode extends Component {
             }}
           />
         </div>
+          </AllNavBar>
+        </div>
+      
       </React.Fragment>
     );
   }

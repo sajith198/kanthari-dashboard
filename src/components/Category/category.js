@@ -76,9 +76,8 @@ class Category extends Component {
     return (
       <React.Fragment>
         <div className="mb-5">
-          <AllNavBar></AllNavBar>
-        </div>
-        <div className="container mainBody">
+          <AllNavBar>
+          <div className="container mainBody">
           <div className="table-responsive">
             <MaterialTable
               title="Category"
@@ -114,6 +113,9 @@ class Category extends Component {
             />
           </div>
         </div>
+          </AllNavBar>
+        </div>
+     
         {/* <Modal
           open={this.state.openDialog}
           onClose={this.handleClose}
