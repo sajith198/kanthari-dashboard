@@ -70,9 +70,8 @@ class AllOrders extends Component {
     return (
       <React.Fragment>
         <div className="mb-5">
-          <AllNavBar></AllNavBar>
-        </div>
-        <div className="container-fluid mainBody">
+          <AllNavBar>
+          <div className="container-fluid mainBody">
           <div className="container mt-5 ">
             <div className="row">
               <div className="col-12 table-responsive">
@@ -95,6 +94,10 @@ class AllOrders extends Component {
             </div>
           </div>
         </div>
+
+          </AllNavBar>
+        </div>
+        
       </React.Fragment>
     );
   }

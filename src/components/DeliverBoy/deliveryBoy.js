@@ -35,9 +35,8 @@ class DeliveryBoy extends Component {
     return (
       <React.Fragment>
         <div className="mb-5">
-          <AllNavBar></AllNavBar>
-        </div>
-        <div className="container-fluid mainBody table-responsive">
+          <AllNavBar>
+          <div className="container-fluid mainBody table-responsive">
           <MaterialTable
             title="Delivery Boy"
             columns={tableColumnsHeaders}
@@ -87,6 +86,9 @@ class DeliveryBoy extends Component {
             }}
           />
         </div>
+          </AllNavBar>
+        </div>
+      
       </React.Fragment>
     );
   }

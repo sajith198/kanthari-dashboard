@@ -62,9 +62,8 @@ class OrderDetails extends Component {
     return (
       <React.Fragment>
         <div className="mb-5">
-          <AllNavBar></AllNavBar>
-        </div>
-        <div className="container mainBody ">
+          <AllNavBar>
+          <div className="container mainBody ">
           <div
             className="card"
             style={{
@@ -273,6 +272,10 @@ class OrderDetails extends Component {
             </div>
           </div>
         </div>
+            
+          </AllNavBar>
+        </div>
+      
       </React.Fragment>
     );
   }

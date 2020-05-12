@@ -17,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     height: 48,
     padding: "0 30px",
+    
   },
   paper: {
     padding: theme.spacing(2),
@@ -75,13 +76,11 @@ class Dashboard extends Component {
       { title: "Payment Mode", field: "paymentMode" },
     ];
     return (
-      <React.Fragment>
-        <div className="mb-5">
-          <AllNavBar></AllNavBar>
-        </div>
-        <div className="container-fluid mainBody m-3">
+      
+        <AllNavBar>
+        <div className="container-fluid mainBody m-3 p-1">
           <Card className={classes.root}>
-            <CardContent className="" id="mainBox">
+            <CardContent className="container-fluid" id="mainBox">
               <Typography gutterBottom variant="h4" component="h2" className="text-default">
                 Today's Order Summary
               </Typography>
@@ -91,7 +90,7 @@ class Dashboard extends Component {
                 m={2}
                 pt={5}
                 p={0}
-                className="row row-cols-4 d-flex justify-content-center"
+                className="row row-cols-12 d-flex justify-content-center"
               >
                 <Box
                   height="10rem"
@@ -100,7 +99,7 @@ class Dashboard extends Component {
                   justifyContent="center"
                   alignItems="flex-end"
                   id="todayBox"
-                  className="col-12 col-md-8 col-sm-12 col-lg-2 border border-info rounded shadow m-2"
+                  className="col-12 col-md-8 col-sm-12 col-lg-2  border border-info rounded shadow my-4 mr-4"
                 >
                   <Box
                     position="absolute"
@@ -140,7 +139,7 @@ class Dashboard extends Component {
                   justifyContent="center"
                   alignItems="flex-end"
                   id="todayBox"
-                  className="col-12 col-md-8 col-sm-12 col-lg-2 border border-warning rounded shadow m-2"
+                  className="col-12 col-md-8 col-sm-12 col-lg-2 border border-warning rounded shadow my-4 mr-4"
                 >
                   <Box
                     position="absolute"
@@ -181,7 +180,7 @@ class Dashboard extends Component {
                   justifyContent="center"
                   alignItems="flex-end"
                   id="todayBox"
-                  className="col-12 col-md-8 col-sm-12 col-lg-2 border border-success rounded shadow m-2"
+                  className="col-12 col-md-8 col-sm-12 col-lg-2 border border-success rounded shadow my-4 mr-4"
                 >
                   <Box
                     position="absolute"
@@ -221,7 +220,7 @@ class Dashboard extends Component {
                   justifyContent="center"
                   alignItems="flex-end"
                   id="todayBox"
-                  className="col-12 col-md-8 col-sm-12 col-lg-2 border border-danger rounded shadow m-2"
+                  className="col-12 col-md-8 col-sm-12 col-lg-2 border border-danger rounded shadow my-4 mr-4"
                 >
                   <Box
                     position="absolute"
@@ -261,8 +260,7 @@ class Dashboard extends Component {
               </Box>
             </CardContent>
           </Card>
-        </div>
-        <br />
+        
         <div className="container mt-5 mb-5">
           <div>
             <div className="col-12 table-responsive table-hover">
@@ -286,7 +284,9 @@ class Dashboard extends Component {
             </div>
           </div>
         </div>
-      </React.Fragment>
+        </div>
+          </AllNavBar>
+       
     );
   }
 }

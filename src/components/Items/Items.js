@@ -158,98 +158,100 @@ const Items = () => {
   ]
     return(
         <div className={classes.root}>
-         <AllNavBar/>
-        <Grid  xs={12} md={12} >
+         <AllNavBar>
+         <Grid  xs={12} md={12} >
        
-            <Grid item xs={12}>
-           
-                <div
-                    style={{
-                        display:"flex",
-                        flexDirection:"row-reverse",
-                        padding:20,
-                    }}>
-                       
-                         <ColorButton
-                            variant="contained"
-                            color="primary"
-                            size="large"
-                            style={{fontSize:16,padding:"auto"}}
-                            className={classes.button}
-                            startIcon={<PostAddIcon style={{fontSize:33}} />}
-                            onClick={handleAddOpen}
-                        >
-                            Add Item
-                        </ColorButton>
-                        <AddItem  open={openAdd} onClose={handleAddClose} />
-                        <EditItem  open={openEdit} data={dataValues} onClose={handleEditClose} />
-                        </div>
-            </Grid>
-            <Grid item md={12}>
-                    <Paper style={{margin:"2%"}}>
-                        <div className="switch">
-                            <CssTextField
-                              size="small" 
-                             margin="contained"
-                             id="price"
-                             label="Search by Name"
-                             type="text"
-                             variant="outlined"
-                             type="search"
-                            style={{flexGrow:0.2}}
-                            />
-
-                            <NativeSelect
-                            style={{flexGrow:0.2}}
-                            id="demo-customized-select-native"
-                            // value={age}
-                            // onChange={handleChange}
-                            input={<BootstrapInput />}
-                            >
-                            <option aria-label="None" value="" />
-                            <option value={10}>Ten</option>
-                            <option value={20}>Twenty</option>
-                            <option value={30}>Thirty</option>
-                            </NativeSelect>
+       <Grid item xs={12}>
       
-                         </div>
-                        </Paper>
-                             <div className=" container mt-5 mb-5">
-                               <div className="table-hover table-striped table-responsive">
-                               <MaterialTable
-                                title="Items"
-                                columns={tableColumn}
-                                data={tableData} 
-                                actions={[
-                                  {
-                                    icon: 'save',
-                                    tooltip: 'Save User',
-                                    // onClick: (event, rowData) => alert("You saved " + JSON.stringify(rowData))
-                                    onClick: (event,rowData) => handleEditOpen(rowData)
-                                  },
-                                  rowData => ({
-                                    icon: 'delete',
-                                    tooltip: 'Delete User',
-                                    // onClick: (event, rowData) => confirm("You want to delete " + rowData.name),
-                                    disabled: rowData.birthYear < 2000
-                                  })
-                                ]}
-                                options={{
-                                  actionsColumnIndex: -1,
-                                  search: false,
-                                  exportButton: true,
-                                  headerStyle: {
-                                    backgroundColor: '#01579b',
-                                    color: '#FFF',
-                                    padding:20
-                                  }
-                                }}       
-                              />
-                               </div>
-                              
-                        </div>
-            </Grid>
-        </Grid>
+           <div
+               style={{
+                   display:"flex",
+                   flexDirection:"row-reverse",
+                   padding:20,
+               }}>
+                  
+                    <ColorButton
+                       variant="contained"
+                       color="primary"
+                       size="large"
+                       style={{fontSize:16,padding:"auto"}}
+                       className={classes.button}
+                       startIcon={<PostAddIcon style={{fontSize:33}} />}
+                       onClick={handleAddOpen}
+                   >
+                       Add Item
+                   </ColorButton>
+                   <AddItem  open={openAdd} onClose={handleAddClose} />
+                   <EditItem  open={openEdit} data={dataValues} onClose={handleEditClose} />
+                   </div>
+       </Grid>
+       <Grid item md={12}>
+               <Paper style={{margin:"2%"}}>
+                   <div className="switch">
+                       <CssTextField
+                         size="small" 
+                        margin="contained"
+                        id="price"
+                        label="Search by Name"
+                        type="text"
+                        variant="outlined"
+                        type="search"
+                       style={{flexGrow:0.2}}
+                       />
+
+                       <NativeSelect
+                       style={{flexGrow:0.2}}
+                       id="demo-customized-select-native"
+                       // value={age}
+                       // onChange={handleChange}
+                       input={<BootstrapInput />}
+                       >
+                       <option aria-label="None" value="" />
+                       <option value={10}>Ten</option>
+                       <option value={20}>Twenty</option>
+                       <option value={30}>Thirty</option>
+                       </NativeSelect>
+ 
+                    </div>
+                   </Paper>
+                        <div className=" container mt-5 mb-5">
+                          <div className="table-hover table-striped table-responsive">
+                          <MaterialTable
+                           title="Items"
+                           columns={tableColumn}
+                           data={tableData} 
+                           actions={[
+                             {
+                               icon: 'save',
+                               tooltip: 'Save User',
+                               // onClick: (event, rowData) => alert("You saved " + JSON.stringify(rowData))
+                               onClick: (event,rowData) => handleEditOpen(rowData)
+                             },
+                             rowData => ({
+                               icon: 'delete',
+                               tooltip: 'Delete User',
+                               // onClick: (event, rowData) => confirm("You want to delete " + rowData.name),
+                               disabled: rowData.birthYear < 2000
+                             })
+                           ]}
+                           options={{
+                             actionsColumnIndex: -1,
+                             search: false,
+                             exportButton: true,
+                             headerStyle: {
+                               backgroundColor: '#01579b',
+                               color: '#FFF',
+                               padding:20
+                             }
+                           }}       
+                         />
+                          </div>
+                         
+                   </div>
+       </Grid>
+   </Grid>
+         </AllNavBar>
+       
         </div>
     );
 }
